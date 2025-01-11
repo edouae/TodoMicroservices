@@ -1,0 +1,6 @@
+@TodoTaskService_HostAddress = http://localhost:5194
+
+GET {{TodoTaskService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
