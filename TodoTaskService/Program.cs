@@ -17,16 +17,19 @@ builder.Services.AddSwaggerGen();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
+
     app.UseSwagger();
-    app.UseSwaggerUI();
-}
+app.UseSwaggerUI(c =>
+{
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Todo API V1");
+    // Set the Swagger UI at the root
+    c.RoutePrefix = "swagger";
+});
 
-app.UseHttpsRedirection();
-
+app.UseRouting();
 app.UseAuthorization();
 
 app.MapControllers();
 PrepDB.PrepPopulation(app);
-app.Run();
+// Important: This will keep the application running
+await app.RunAsync();

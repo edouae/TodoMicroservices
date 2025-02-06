@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: todotask-depl
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: todotaskservice
+  template:
+    metadata:
+      labels:
+        app: todotaskservice
+    spec:
+      containers:
+        - name:  todotaskservice
+          image: douae196/todotaskservice:latest
