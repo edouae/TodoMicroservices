@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "K8S", "K8S", "{D35F0803-8A5
 		K8S\todotask-np-srv.yaml = K8S\todotask-np-srv.yaml
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserService", "UserService\UserService.csproj", "{5D06BFFA-F431-49C7-AB69-E5262728131B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{CC37A9A0-D181-48B8-BB6E-3B382048E825}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC37A9A0-D181-48B8-BB6E-3B382048E825}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CC37A9A0-D181-48B8-BB6E-3B382048E825}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D06BFFA-F431-49C7-AB69-E5262728131B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D06BFFA-F431-49C7-AB69-E5262728131B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D06BFFA-F431-49C7-AB69-E5262728131B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D06BFFA-F431-49C7-AB69-E5262728131B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
